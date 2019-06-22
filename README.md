@@ -34,7 +34,7 @@ Also the term ``` pack() ``` used above is a term for geometry on the GUI.
 The following is how to create a button using ``` Button``` (make sure it is capital B) within a GUI which you can name and give a command, in this example the command is to print out hello.
 
 ```python
-button = tk.Button(r, text = 'Reliability', width=25, command= 'hello')
+button = tk.Button(r, text = 'Flowers', width=25, command= flower)
 button.pack()
 ```
 
@@ -45,15 +45,29 @@ First make a function:
 ```python
 def flower():
   white = 5
-  blue = 8
+  blue = v.get()
   green = 2
-  total number of flowers = 15 
-  print('How many of the flowers will be blue =', (blue/total number of  flowers)*100)
+  total_number_of_flowers = 15 
+  F =  (blue/total_number_of_flowers)*100
+  output.insert(END, F)
 ```
 
 and then to call it using the button use ```command = flower```. 
-The result for this function comes out of the python console as ``` How many of the flowers will be blue = 53.333333333333336 ```
+The result for this function comes out of the python console as ``` How many of the flowers will be blue : 53.333333333333336 ```
+The command ```output.insert``` is calling the ```output``` command which can be seen below in this example, is passing what is inserted to the ```Text``` command so it can appear on the GUI.
 
-# Result to appear in GUI using a Label 
+## Result to appear in GUI using a Label 
+To label you can use the simple command of ```Label``` make sure it is a captial L. Then Insert the text you want to see appear. 
+Then to make the reult of the function you have just run from the button you can us the command of ```Text``` again make sure you use captial T. Using ```Text``` you can state the size of your text box you want to appair in your GUI. 
+```python
+lab = tk.Label(r, text = 'How many of the flowers will be blue:').pack()
+output = tk.Text(r, width=40, height=2)
+output.pack()
+```
 
+## How to close the GUI loop
+You use a command called ```mainloop```
+```python
+r.mainloop() 
+```
 
