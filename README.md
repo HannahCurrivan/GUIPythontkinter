@@ -31,7 +31,7 @@ Also the term ``` pack() ``` used above is a term for geometry on the GUI.
 
 ## Make a Button 
 
-The following is how to create a button using ``` Button``` (make sure it is capital B) within a GUI which you can name and give a command, in this example the command is to print out hello.
+The following is how to create a button using ``` Button``` (make sure it is capital B) within a GUI which you can name and give a command, in this example the command is to call a function which is descibed below and is called ```flower```.
 
 ```python
 button = tk.Button(r, text = 'Flowers', width=25, command= flower)
@@ -60,7 +60,7 @@ The command ```output.insert``` is calling the ```output``` command which can be
 To label you can use the simple command of ```Label``` make sure it is a captial L. Then Insert the text you want to see appear. 
 Then to make the reult of the function you have just run from the button you can us the command of ```Text``` again make sure you use captial T. Using ```Text``` you can state the size of your text box you want to appair in your GUI. 
 ```python
-lab = tk.Label(r, text = 'How many of the flowers will be blue:').pack()
+lab = tk.Label(r, text = 'How many of the flowers will be blue (percentage):').pack()
 output = tk.Text(r, width=40, height=2)
 output.pack()
 ```
@@ -71,3 +71,6 @@ You use a command called ```mainloop```
 r.mainloop() 
 ```
 
+## Outcome of the code
+
+![alt text](C:\Users\hcurrivan\Desktop\Hannah_Currivan\Python\gui.png)
