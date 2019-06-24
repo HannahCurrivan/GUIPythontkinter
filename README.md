@@ -73,4 +73,4 @@ r.mainloop()
 
 ## Outcome of the code
 
-![alt text](C:\Users\hcurrivan\Desktop\Hannah_Currivan\Python\gui.png)
+![alt text](https://github.com/HannahCurrivan/GUIPythontkinter/blob/master/gui.png)
